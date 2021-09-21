@@ -17,7 +17,7 @@ const addFilm = async (req, res) => {
         await film.save();
         res.status(200).send({film: film, message: "Successfully added film"});
     } catch (error) {
-        response.status(500).send({err: error});
+        res.status(500).send({ err: error });
     };
 
 const updateSteve = (req, res) => {
@@ -33,3 +33,4 @@ const deleteSteve = (req, res) => {
 module.exports = {
     helloWorld, steve, addFilm, updateSteve, deleteSteve,
 }
+};
