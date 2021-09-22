@@ -15,3 +15,5 @@ helloRouter.delete("/steve", deleteSteve);
 
 
 module.exports = helloRouter;
+
+// *** get & delete requests DONT use body ***
